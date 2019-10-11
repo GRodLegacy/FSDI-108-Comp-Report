@@ -1,0 +1,13 @@
+.menu {
+    background-color: rgb(9, 255, 0);
+    border: 2px dotted red;
+    width: 50%;
+    align-content: center;
+}
+
+li {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 10px;
+    text-align: center;
+}

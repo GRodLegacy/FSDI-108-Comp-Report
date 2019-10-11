@@ -1,0 +1,51 @@
+<h2>Register new user in the system</h2>
+
+<div class="row">
+    <div class="col-md-10">
+
+        
+
+        <!-- Create the register user form -->
+        <!-- Ask for:
+            - userName
+            - email
+            - password
+            - firstName
+            - lastName
+        
+        -->
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">First Name</label>
+                    <input type="text" [(ngModel)]="userModel.firstName" name="firstName" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput">Last Name</label>
+                    <input type="text" [(ngModel)]="userModel.lastName" name="lastName" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">User Name</label>
+                <input type="text" [(ngModel)]="userModel.userName" name="userName" class="form-control" id="formGroupExampleInput" placeholder="User Name">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">E-mail</label>
+                <input type="text" [(ngModel)]="userModel.email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Password</label>
+                <input type="password" [(ngModel)]="userModel.password" name="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Re-type Password</label>
+                <input type="password" [(ngModel)]="retypePassword" name="retypePassword" class="form-control" placeholder="Password">
+            </div>
+
+            <button (click)='save();' type="button" class="btn btn-outline-success">Save User</button>
+        </form>
+
+
+    </div>
+</div>
